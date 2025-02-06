@@ -1,0 +1,78 @@
+/* shared style */
+.display-flex{
+    display: flex;
+}
+.nav-title,
+.nav-link,
+.cam-title,
+.cam-para {
+    color: #3A3A3A;
+}
+/* mab related style */
+.nav-title{
+    
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.nav-bar{
+    justify-content: space-between;
+
+}
+.nav-items{
+    list-style: none;
+    
+}
+.nav-links{
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+/* camera reltd section */
+.cam-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+
+}
+.cam-para{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.btn-primary{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-color: none;
+    border-radius: 41px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+}
+.camera-part{
+    justify-content: space-between;
+}
+.camera{
+    background-image: url("Circle\ design.svg");
+    
+}
+.logo-container{
+   max-width: 1300px;
+    margin: 20px 130px ;
+    justify-content: space-around; 
+}
+
+/* responsive part */
+@media screen and (max-width:576px ) {
+    .nav-bar,.nav-items,.camera-part,.logo-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logos,.camera-part{
+        margin-bottom: 10px;
+    }
+    .nav-links{
+        margin-bottom: 15px;
+    }
+}
