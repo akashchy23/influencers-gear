@@ -62,6 +62,44 @@
     margin: 30px 130px ;
     justify-content: space-around; 
 }
+/* collection related style */
+.main-container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.collection-title{
+    text-align: center;
+}
+.collection-container{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  
+}
+.collection-title{
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+.card>h2{
+    color: #18191F;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+h4{
+    margin: 0px 0px 27px 0px;
+}
+.card>p{
+    font-weight: 700;
+    font-size:0.75rem;
+    color: #787885;
+}
+.card{
+    padding: 15px;
+    width: 340px;
+    height: 470px;
+    background-color: #FFFFFF;
+}
 
 /* responsive part */
 @media screen and (max-width:576px ) {
@@ -74,5 +112,9 @@
     }
     .nav-links{
         margin-bottom: 15px;
+    }
+    .main-container,.collection-container{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
     }
 }
