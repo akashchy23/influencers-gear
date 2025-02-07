@@ -103,7 +103,7 @@ h4{
 
 /* responsive part */
 @media screen and (max-width:576px ) {
-    .nav-bar,.nav-items,.camera-part,.logo-container{
+    .nav-bar,.nav-items,.camera-part{
         flex-direction: column;
         align-items: center;
     }
@@ -113,8 +113,27 @@ h4{
     .nav-links{
         margin-bottom: 15px;
     }
+    
     .main-container,.collection-container{
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
+       
     }
+    .logo-container{
+        margin:10px 5px 10px 5px ;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 5px;
+    }
+    .logos{
+        gap: 3px;
+    }
+    .camera{
+        order: -1;
+        
+    }
+    .camera-description{
+        margin-bottom: 30px;
+    }
+    
 }
