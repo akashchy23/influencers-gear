@@ -180,4 +180,8 @@ footer{
         order: -1;
 
     }
+    .nav-items{
+        flex-direction: row;
+        padding: 10px;
+    }
 }
